@@ -29,7 +29,7 @@ export default function IndexPage({products, mainMenu, footerMenu}: InferGetServ
 		<MainLayout mainMenu={mainMenu} footerMenu={footerMenu}>
 			<div className='container-xxl'>
 				<MainPageSlider />
-				<h1 className='page-heading page-heading_h1  page-heading_m-h1'>Boundless store</h1>
+				<h1 className='page-heading page-heading_h1  page-heading_m-h1'>Ótica Amazônia</h1>
 				<ProductsList
 					products={products}
 					className={'page-block'}
@@ -40,18 +40,18 @@ export default function IndexPage({products, mainMenu, footerMenu}: InferGetServ
 				columns={[
 					{
 						icon:  <FontAwesomeIcon icon={faBug} className={'text-with-icons__icon'} />,
-						title: 'Does not slip in the hands',
-						comment: 'Anti-slip coating - for reliability.'
+						title: 'Armações duradouras',
+						comment: 'Anti choque.'
 					},
 					{
 						icon:  <FontAwesomeIcon icon={faShieldAlt} className={'text-with-icons__icon'} />,
-						title: 'Extra phone protection',
-						comment: 'Anti-slip coating - for reliability.'
+						title: 'Armações duradouras',
+						comment: 'Anti choque.'
 					},
 					{
 						icon:  <FontAwesomeIcon icon={faSmile} className={'text-with-icons__icon'} />,
-						title: 'Looks nice',
-						comment: 'With our cases your phone look even better than without.'
+						title: 'Armações duradouras',
+						comment: 'Anti choque.'
 					},
 				]}
 				fullWidth={true}
@@ -60,30 +60,30 @@ export default function IndexPage({products, mainMenu, footerMenu}: InferGetServ
 			<div className='container-xxl'>
 				<ProductsSliderByQuery
 					query={{collection: ['main-page'], sort: 'in_collection'}}
-					title={'Special offers:'}
+					title={'Ofertas Especiais'}
 					wrapperClassName='page-block'
 				/>
 				<div className={'page-block'}>
-					<h2 className={'text-center mb-4'}>Our customers love us:</h2>
+					<h2 className={'text-center mb-4'}>Nossos Clientes:</h2>
 					<Reviews
 						reviews={[
 							{
 								image: <img src={reviewWoman1.src} className={'reviews__img'} />,
-								title: 'Amanda',
-								jobTitle: 'CEO reseller corp',
-								comment: 'I like working with the wholesales team. We are thankful for your great service!'
+								title: 'André Lobo',
+								jobTitle: 'Cliente assíduo',
+								comment: 'Ótimas armações e planos de pagamento'
 							},
 							{
 								image: <img src={reviewMan1.src} className={'reviews__img'} />,
-								title: 'Jack',
-								jobTitle: 'Frequent buyer',
-								comment: 'I like the quality and the quick shipping.'
+								title: 'André Lobo',
+								jobTitle: 'Cliente assíduo',
+								comment: 'Ótimas armações e planos de pagamento'
 							},
 							{
 								image: <img src={reviewMan2.src} className={'reviews__img'} />,
-								title: 'Dave',
-								jobTitle: 'Founder at Startup',
-								comment: 'I love how the things are going!'
+								title: 'André Lobo',
+								jobTitle: 'Cliente assíduo',
+								comment: 'Ótimas armações e planos de pagamento'
 							},
 						]}
 					/>
